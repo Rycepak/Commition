@@ -66,6 +66,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="calculateOnTapped" destination="8bC-Xf-vdC" id="fzw-Hh-uTY"/>
+                        <outlet property="commisionPayTextField" destination="kea-Mu-vEF" id="FFW-Ch-mDf"/>
+                        <outlet property="totalPayLabel" destination="Uex-aQ-EM7" id="b5Z-87-0Os"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
