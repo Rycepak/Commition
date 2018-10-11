@@ -24,15 +24,18 @@ class ViewController: UIViewController {
 
     @IBAction func calculateWhenPressed(_ sender: Any)
     {
-        getInput()
+        let comPay = getInput()
+        let totalPay = comPay + Double(basePay)
+        totalPayLabel.text = "Total Pay = $\(totalPay)"
     }
     
     
-    func getInput(){
-        if let data = commisionPayTextField.text, let commisionPay = Int(data){
-            print("everything is fine")
+    func getInput() -> Double
+    {
+        if let data = commisionPayTextField.text, let commisionPay = Double(data){
+            return commisionPay
         } else {
-            print("error occured")
+            return 0
         }
         
     }
