@@ -13,12 +13,28 @@ class ViewController: UIViewController {
     @IBOutlet weak var totalPayLabel: UILabel!
     
     @IBOutlet weak var commisionPayTextField: UITextField!
+    let basePay:Int = 500
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
 
     }
 
-    @IBOutlet var calculateOnTapped: UIView!
+
+    @IBAction func calculateWhenPressed(_ sender: Any)
+    {
+        getInput()
+    }
+    
+    
+    func getInput(){
+        if let data = commisionPayTextField.text, let commisionPay = Int(data){
+            print("everything is fine")
+        } else {
+            print("error occured")
+        }
+        
+    }
     
 }
-
