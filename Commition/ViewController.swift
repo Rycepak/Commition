@@ -26,7 +26,9 @@ class ViewController: UIViewController {
     {
         let comPay = getInput()
         let totalPay = comPay + Double(basePay)
-        totalPayLabel.text = "Total Pay = $\(totalPay)"
+        let formattedPay = String(format: "%.2f", totalPay)
+        
+        totalPayLabel.text = "Total Pay = $\(formattedPay)"
     }
     
     
